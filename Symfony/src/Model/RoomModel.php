@@ -4,7 +4,7 @@ use App\Domain\Room;
 use PDOException;
 use \Symfony\Component\HttpClient\Exception\InvalidArgumentException;
 
-class RoomModel extends ModelBase{
+class RoomModel extends ModelBase implements IRoomModel {
     /**
      * @return array
      */

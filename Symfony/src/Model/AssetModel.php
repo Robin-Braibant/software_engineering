@@ -3,7 +3,7 @@
 use App\Domain\Asset;
 use Symfony\Component\HttpClient\Exception\InvalidArgumentException;
 
-class AssetModel extends ModelBase{
+class AssetModel extends ModelBase implements IAssetModel {
     /**
      * @param $name
      * @return Asset|array

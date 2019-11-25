@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\ITicketModel;
 use App\Model\TicketModel;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -17,7 +18,7 @@ class TicketController extends AbstractController
      * TicketController constructor.
      * @param $ticketRepository
      */
-    public function __construct(TicketModel $ticketRepository)
+    public function __construct(ITicketModel $ticketRepository)
     {
         $this->ticketRepository = $ticketRepository;
     }

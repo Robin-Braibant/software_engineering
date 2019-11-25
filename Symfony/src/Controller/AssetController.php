@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Model\AssetModel;
+use App\Model\IAssetModel;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Exception\InvalidArgumentException;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -15,9 +16,9 @@ class AssetController extends AbstractController
 
     /**
      * AssetController constructor.
-     * @param AssetModel $assetRepository
+     * @param IAssetModel $assetRepository
      */
-    public function __construct(AssetModel $assetRepository)
+    public function __construct(IAssetModel $assetRepository)
     {
         $this->assetRepository = $assetRepository;
     }

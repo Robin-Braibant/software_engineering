@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\IRoomModel;
 use App\Model\RoomModel;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpClient\Exception\InvalidArgumentException;
@@ -15,9 +16,9 @@ class RoomController extends AbstractController
 
     /**
      * RoomController constructor.
-     * @param RoomModel $roomRepository
+     * @param IRoomModel $roomRepository
      */
-    public function __construct(RoomModel $roomRepository)
+    public function __construct(IRoomModel $roomRepository)
     {
         $this->roomRepository = $roomRepository;
     }

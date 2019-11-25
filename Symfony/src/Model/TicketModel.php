@@ -3,7 +3,7 @@
 use App\Domain\Ticket;
 use \Symfony\Component\HttpClient\Exception\InvalidArgumentException;
 
-class TicketModel extends ModelBase{
+class TicketModel extends ModelBase implements ITicketModel {
 
     /**
      * @param $assetName
